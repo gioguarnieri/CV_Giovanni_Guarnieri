@@ -4,7 +4,7 @@ position: "Desenvolvedor | Cientista de Dados"
 address: |
          | São José dos Campos, São Paulo
 profilepic: perfil_gio.jpeg
-phone: 24 99859 5455
+phone: 11 99601 1744
 email: "giovanniguarnieri@id.uff.br"
 github: gioguarnieri
 linkedin: giovanni-guarnieri
@@ -47,7 +47,7 @@ library(gridExtra)
 ```
 
 <!-- | Nationality: Brazilian, Birthdate: 25/03/1994 -->
-
+```
 \faIcon{university} Formação Acadêmica
 ==================================
 
@@ -61,8 +61,8 @@ tribble(
 ) |> 
   detailed_entries(study, dates, university, loc, details, .protect=FALSE)
 
-
 ```
+<!--
 \faIcon{briefcase} Experiência Profissional
 ============================================
 
@@ -72,9 +72,9 @@ tribble(
   "Desenvolvedor Python Pleno", "TrackCash", "Remoto", "07/2021-Atual", "Atuar como desenvolvedor backend no desenvolvimento de sistemas para automação de processos, comunicação com apis e leitura de dados em arquivos."
 ) |> 
   detailed_entries(study, dates, university, loc, details, .protect=FALSE)
-```
+-->
 
-<!--
+
 \faIcon{lightbulb} Projects
 =====================================
 
@@ -88,11 +88,9 @@ tribble(
 ```{r proj}
 tribble(
   ~ name, ~ acronym, ~ date, ~study_area,
-  "Smarter Targeting of Erosion Control", "STEC", "2018 - 2023", "NZ", 
-  "The impact of mass movements on alpine trails and huts assessed by EO data", "MontEO \\href{http://monteo.zgis.at/}{\\tiny{\\faIcon{link}}}", "2020 - 2021", "AT", 
-  "Detection and Analysis of Landslide-induced River Course Changes and Lake Formation", "RiCoLa \\href{http://landslides-and-rivers.sbg.ac.at/}{\\tiny{\\faIcon{link}}}", "2017 - 2020", "AT, NZ, TW", 
-  "Observation and Reporting of Landscape Dynamics by Citizens", "citizenMorph \\href{http://citizenmorph.sbg.ac.at/}{\\tiny{\\faIcon{link}}}", "2018 - 2020", "AT, DE, IS", 
-  "Mapping, Monitoring and Modelling the Spatio-Temporal Dynamics of Land Surface Morphology", "MORPH \\href{http://morph.sbg.ac.at/}{\\tiny{\\faIcon{link}}}", "2016 - 2020", "IS"
+  "Novas alternativas para dessalinização da água baseadas em nanodispositivos 2D", "", "2016 - 2018", "UFF", 
+  "Cálculo dos coeficientes de difusão em resinas poliméricas", "", "2017 - 2019", "UFF", 
+  "Beyond the shortest path: an analysis of networks' vulnerabilities", "", "2020 - 2022", "INPE", 
 ) |> 
   detailed_entries(with = acronym, what = name, when = date, where = study_area, .protect=FALSE)  
 ```
@@ -116,7 +114,7 @@ tribble(
 ```
 -->
 
-
+<!--
 \faIcon{laptop-code} Cursos
 ================================
 
@@ -148,6 +146,7 @@ tribble(
 ) |> 
   detailed_entries(study, dates, university, loc, details, .protect=FALSE)
 ```
+-->
 
 \faIcon{brain} Habilidades
 ================================
@@ -163,9 +162,9 @@ tribble(
 ```{r techtable, results='markup'}
 tribble(
    ~`Coding Languages`, ~Frameworks, ~Other, 
-  "Python -- C -- C++ -- R -- Julia -- Lua -- SQL",
-  "Machine Learning -- AWS -- OpenMP -- MPI -- WebScraping -- RestAPI -- Django -- Flask",
-  "Git -- GitFlow -- Markdown -- LaTex -- PowerBIyes"
+  "Python -- C -- C++ -- Shell ",
+  "Machine Learning -- OpenMP -- MPI",
+  "Git -- Markdown -- LaTex"
 ) |>
   kable(booktabs = T, align = 'c', escape = F, format = "latex") |>
   kable_styling(full_width = F, font_size = 9, latex_options = "HOLD_position") |> 

@@ -1,14 +1,14 @@
 ---
-name: Matheus Elis
+name: Giovanni Guarnieri
 position: "Desenvolvedor | Cientista de Dados"
 address: |
          | São José dos Campos, São Paulo
-profilepic: perfil_elis.jpeg
+profilepic: perfil_gio.jpeg
 phone: 24 99859 5455
-email: "matheuselis@id.uff.br"
-github: MatheusElis
-linkedin: matheuselisdasilva
-aboutme: "Físico Computacional e atual aluno de mestrado em Computação Aplicada no Instituto Nacional de Pesquisas Espaciais (INPE). Atualmente atuo como Desenvolvedor Python e possuo habilidades de resolução de problemas voltados a modelagem e estatística e experiência acadêmica e profissional com trabalho individuais e em equipe."
+email: "giovanniguarnieri@id.uff.br"
+github: gioguarnieri
+linkedin: giovanni-guarnieri
+aboutme: "Formado na área de Física, com ênfase em Computação. Mestre em Computação Aplicada formado no INPE-CAP e atualmente cursando doutorado na área de Computação Aplicada no INPE-CAP. Concluiu um projeto na área de Dinâmica Molecular na UFF-VR. Participou de um projeto de Cálculo dos coeficientes de difusão em resinas poliméricas. Possui experiência com sistemas Linux, sabe programar em Python, C, Fortran e Shell Script."
 headcolor: 009ACD
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
@@ -46,21 +46,23 @@ library(gridExtra)
 # \paragraphstyle{I am an environmental engineer from Cuenca, Ecuador specialized in Geospatial Technologies, expected by March 2019. My research scope includes spatial data analysis, particularly focused on R programming; remote sensing and earth observation data analysis, specially optical satellite imagery applied to environmental studies and analyses such as air pollution, land use/land cover change; geostatistical analysis of climate data; and ecological modelling. I feel very keen to pursue a career in research, science, and academia.}
 ```
 
-<!-- | Nationality: Ecuadorian, Birthdate: 05/01/1994 -->
+<!-- | Nationality: Brazilian, Birthdate: 25/03/1994 -->
 
 \faIcon{university} Formação Acadêmica
 ==================================
 
-```{r education}
+{r education}
 tribble( 
   ~ study, ~ university, ~ loc, ~ dates, ~ details,
-  "Física com ênfase em física computacional", "Universidade Federal Fluminense", "Volta Redonda, Rio de Janeiro", "2015-2021", "Monitor Bolsista no Projeto Sensebiliza (2017-2021)",
-  "Física com ênfase em física computacional", "Universidade Federal Fluminense", "Volta Redonda, Rio de Janeiro", "2015-2021", "Monografia intitulada 'Estudo da Dinâmica da Hanseníase no Norte do Brasil Via Modelagem Baseada em Agentes'", 
-  "Mestrado em Matemática Computacional", "Instituto Nacional de Pesquisas Espaciais (INPE)", "São José dos Campos", "2021-Atual", "Disciplinas: Programação de Sistemas Massivamente Paralelos, Tópicos em Observação da Terra, Modelagem e Simulação do Sistema Terrestre, Redes Complexas Dinâmica e Aplicações, Tópicos Avançados em Modelagem Ambiental"
+  "Física com ênfase em física computacional", "Universidade Federal Fluminense", "Volta Redonda, Rio de Janeiro", "2017-2019", "Bolsista CNPq de Iniciação Científica",
+  "Física com ênfase em física computacional", "Universidade Federal Fluminense", "Volta Redonda, Rio de Janeiro", "2013-2019", "Monografia intitulada 'Recuperando o valor de coeficiente de difusão em dados artificiais.'", 
+  "Mestrado em Computação Aplicada", "Instituto Nacional de Pesquisas Espaciais (INPE)", "São José dos Campos", "2020-2022", "Dissertação intitulada 'Beyond the shortest path: an analysis of networks' vulnerabilities'"
+  "Doutorado em Computação Aplicada", "Instituto Nacional de Pesquisas Espaciais (INPE)", "São José dos Campos", "2022-Atual" 
 ) |> 
   detailed_entries(study, dates, university, loc, details, .protect=FALSE)
-```
 
+
+```
 \faIcon{briefcase} Experiência Profissional
 ============================================
 
@@ -198,7 +200,7 @@ tribble(
 ```{r langforeign, results='markup'}
 data.frame(
   Skill = c("Leitura", "Escrita", "Escuta","Fala"),
-  Inglês = cell_spec(c("Avançado","Básico","Avançado","Básico"), 'latex', color = '#009acd'), 
+  Inglês = cell_spec(c("Avançado","Avançado","Avançado","Avançado"), 'latex', color = '#009acd'), 
   Português = cell_spec(c(rep("Nativo", 4)), 'latex', color = '#4cb8dc')
 ) |>
   kable(booktabs = T, align = 'c', escape = F, format = "latex") |>
